@@ -1,5 +1,6 @@
+
 body{
-    background: linear-gradient(#15dbcb, #be1adf);
+    background: linear-gradient(#15dbcb, #1a0dcc);
 }
 
 .img {
@@ -29,4 +30,8 @@ body{
 .topnav a:hover {
     background-color: lightgray;
     color: black;
+}
+
+.ser {
+    font-size: xx-large;
 }
