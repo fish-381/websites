@@ -1,1 +1,9 @@
+body{
+    background: linear-gradient(#15dbcb, #be1adf);
+}
+
+.img {
+    max-width:100%;
+}
+
 
