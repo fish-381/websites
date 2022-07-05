@@ -1,7 +1,6 @@
 body {
     background-color: rgb(24, 59, 216);
 }
-
 .left {
     float:left;
    width:300px;
@@ -17,7 +16,6 @@ body {
 h1 {
     text-align: center;
 }
-
 ul {
     list-style:"* " ;
 }
