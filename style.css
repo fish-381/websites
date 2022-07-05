@@ -1,3 +1,5 @@
+ 
+
 
 body{
     background: linear-gradient(#15dbcb, #1a0dcc);
@@ -34,4 +36,26 @@ body{
 
 .ser {
     font-size: xx-large;
+}
+
+h3 {
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.left {
+    float:left;
+   width:300px;
+}
+.right {
+    float:right;
+   width:300px;
+}
+.con {
+    width:600px;
+   margin:0 auto;
+}
+
+.email {
+    text-align: center;
 }

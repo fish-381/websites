@@ -1,0 +1,23 @@
+body {
+    background-color: blue;
+}
+
+.left {
+    float:left;
+   width:300px;
+}
+.right {
+    float:right;
+   width:300px;
+}
+.con {
+    width:600px;
+   margin:0 auto;
+}
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style:"* " ;
+}
