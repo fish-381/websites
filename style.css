@@ -1,8 +1,21 @@
 body{
     background: linear-gradient(#15dbcb, #1a0dcc);
 }
+.con {
+    position: relative;
+    text-align: center;
+}
 .img {
     max-width:100%;
+    height: fit-content;
+}
+.heading {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    
 }
 .topnav ul {
     list-style: none;
