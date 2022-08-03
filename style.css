@@ -1,6 +1,6 @@
 body{
-    background: linear-gradient(#15dbcb, #1a0dcc);
-    color: white;
+    background: linear-gradient(#536277, #35475f);
+    color: #fed461;
 }
 .con {
     position: relative;
@@ -16,7 +16,7 @@ body{
     top: 50%;
     width: 100%;
     text-align: center;
-    color: white;
+    color: #fed461;
     
 }
 .topnav ul {
