@@ -7,6 +7,14 @@
     <title>contact us - Townsville Bookkeeping</title>
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="./contact.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("tRgt4-MDiUWYrxQjJ");
+   })();
+</script>
 </head>
 <body>
     <nav class="topnav">
@@ -30,16 +38,35 @@
             <h2>Do you have a job you would like us to take a look at or maybe you have a problem? don't hesitate to send us ann email or give us a call.</h2>
             <h4>contact Details.</h4>
             <h3>Email: email <br/> Phone ******* 04*****7</h3>
-<br/><form action="contact.php" method="post">
+<br/>
                 <fieldset>
                 <legend>send us a message</legend>
-              <label>NAME:</label>  <input type="text" title="name" placeholder="name" name="name" required="true"> <br/>
-              <label>EMAIL:</label>  <input type="email" title="email" placeholder="email" name="email" required="true"> <br/>
-              <label>PHONE:</label>  <input type="tel" title="phone number" name="phonenum" placeholder="phone #"> <br/> 
-              <label>MESSAGE:</label>  <input type="text" title="message" placeholder="message" name="messagebo" required="true"> <br/>
-              <button>submit</button>
+              <label>NAME:</label>  <input type="text" title="name" placeholder="name" id="name" name="name" required="true"> <br/>
+              <label>EMAIL:</label>  <input type="email" title="email" placeholder="email" id="email" name="email" required="true"> <br/>
+              <label>PHONE:</label>  <input type="tel" title="phone number" name="phonenum" id="phone" placeholder="phone #"> <br/> 
+              <label>MESSAGE:</label>  <textarea cols="40" rows="5"  id="message" placeholder="your message"></textarea> <br/>
+              <button id="btn">submit</button>
             </fieldset>
-            </form>
+            
         </center>
+        <script>
+const name = document.getElementById('name')
+const email = document.getElementById('email')
+const phone = document.getElementById('phone')
+const message = document.getElementById('message')
+const btn = document.getElementById('btn')
+btn.addEventListener("click", (e) => {
+    e.preventDefault()
+    emailjs.send("service_bzy1jqm","template_7ilgfwl",{
+from_name: `${name.value}`,
+number: `${phone.value}`,
+email: `${email.value}`,
+message: `${message.value}`
+});
+
+alert('thanks for the email! sent.')
+})
+
+        </script>
 </body>
 </html>
