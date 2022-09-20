@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(#536277, #35475f);
     color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .left {
     float:left;

@@ -10,6 +10,9 @@ body{
     padding-top: 10px;;
     max-width:100%;
     height: fit-content;
+    height: 30%;
+    width: 30%;
+    
 }
 .heading {
     position: absolute;
