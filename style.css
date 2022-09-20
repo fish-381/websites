@@ -47,17 +47,17 @@ body{
 .ser {
     font-size: xx-large;
 }
-h3 {
+h2 {
     text-align: center;
     text-transform: capitalize;
 }
 .left {
-    float:left;
-   width:300px;
+    display: inline-block;
+    
 }
 .right {
-    float:right;
-   width:300px;
+    display: inline-block;
+   
 }
 .con {
     width:600px;
@@ -80,35 +80,11 @@ h3 {
     }
 }
 
-.data:nth-child(2) {
-    transition-delay: 200ms;
-}
-.data:nth-child(3) {
-    transition-delay: 300ms;
-}
-.data:nth-child(4) {
-    transition-delay: 400ms;
-}
-.data:nth-child(5) {
-    transition-delay: 500ms;
-}
-.data:nth-child(6) {
-    transition-delay: 600ms;
-}
-.data:nth-child(7) {
-    transition-delay: 700ms;
-}
-.data:nth-child(8) {
-    transition-delay: 800ms;
-}
-.data:nth-child(9) {
-    transition-delay: 900ms;
-}
 
 .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
+    transform: translateY(0);
 }
 .in ul {
     list-style:"- " ;
