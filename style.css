@@ -86,6 +86,6 @@ h2 {
     filter: blur(0);
     transform: translateY(0);
 }
-.in ul {
-    list-style:"- " ;
+li {
+    list-style: none;
 }
